@@ -1,0 +1,14 @@
+spring:
+  h2.console.enabled: true
+  datasource:
+    driverClassName: org.h2.Driver
+    serverTimezone: UTC
+    url: jdbc:h2:mem:regformdb
+    username: sa
+    password: password
+  flyway:
+    enabled: true
+  jpa:
+    show_sql: true
+    hibernate.ddl-auto: update
+    properties.hibernate.dialect: org.hibernate.dialect.H2Dialect
